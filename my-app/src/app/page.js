@@ -4,6 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import PesquisaVagas from './componentes/pesquisavagas';
 import Footer from './componentes/footer';
 import CarrosselVagas from './componentes/carrosselvagas';
+import CarrosselEmpresas from './componentes/carrosselempresas';
 
 export default function Home(){
   return(
@@ -38,6 +39,7 @@ export default function Home(){
                 </div>
           </div>
       </main>
+      <CarrosselEmpresas />
         <section id="sobre-nos" className={styles["sobre-nos-section"]}>
           <div className={styles["sobre-nos-conteudo"]}>
           <div className={styles["sobre-nos-topo"]}>

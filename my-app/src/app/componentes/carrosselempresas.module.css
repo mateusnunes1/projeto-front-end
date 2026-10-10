@@ -1,0 +1,112 @@
+
+.carrosselEmpresas {
+  width: 100%;
+  padding: 70px 0;
+  overflow: hidden;
+  text-align: center;
+  color: #f1f1ff;
+  background: linear-gradient(90deg,#08082E 0%,#101078 100%);
+}
+
+.carrosselEmpresas h2 {
+  margin: 0 20px 12px;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 700;
+  color: #7427ff;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+}
+
+.carrosselEmpresas p {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  padding: 0 20px;
+  color: #c3c3e8;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Space Mono", monospace;
+}
+
+.janelaCarrossel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 0;
+  -webkit-mask-image: linear-gradient(to right,transparent, black 8%, black 92%,transparent);
+  mask-image: linear-gradient(to right,transparent,black 8%,black 92%,transparent);
+}
+
+.trilhoCarrossel {
+  display: flex;
+  width: max-content;
+  gap: 25px;
+  animation: deslizarEmpresas 30s linear infinite;
+}
+
+.cardEmpresa {
+  width: 190px;
+  height: 115px;
+  flex: 0 0 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid rgba(116, 39, 255, 0.3);
+  border-radius: 18px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cardEmpresa:hover {
+  transform: translateY(-5px);
+  border-color: #7427ff;
+  box-shadow: 0 8px 25px rgba(116, 39, 255, 0.2);
+}
+
+.cardEmpresa img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(1.05);
+}
+
+@keyframes deslizarEmpresas {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .carrosselEmpresas {
+    padding: 45px 0;
+  }
+
+  .carrosselEmpresas p {
+    font-size: 14px;
+  }
+
+  .trilhoCarrossel {
+    gap: 15px;
+    animation-duration: 24s;
+  }
+
+  .cardEmpresa {
+    width: 145px;
+    height: 95px;
+    flex-basis: 145px;
+    padding: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trilhoCarrossel {
+    animation: none;
+  }
+}
