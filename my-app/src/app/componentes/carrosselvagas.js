@@ -21,6 +21,29 @@ export default function CarrosselVagas() {
     ];
     };
 
+    const compartilharVaga = async (vaga) => {
+      const url = vaga.link || window.location.href;
+
+      const dados = {
+        title: vaga.vaga,
+        text: `Confira a vaga de ${vaga.vaga} na empresa ${vaga.empresa}.`,
+        url: url,
+    };
+      try{
+        if (navigator.share) {
+          await navigator.share(dados);
+        } else {
+          await navigator.clipboard.writeText(
+            `${dados.text}\n${dados.url}`
+          );
+          alert("Link da Vaga Copiado");
+        }} 
+      catch (erro) {
+        if (erro.name !== "AbortError") {
+        console.error("Erro ao compartilhar:", erro);
+        }
+    }};
+
 return (
     <section className={styles.secaoVagas} id="vagas-destaque">
     <div className={styles.cabecalho}>
@@ -66,7 +89,12 @@ return (
                 <span>{vaga.empresa}</span>
               </div>
 
-              <span className={styles.iconeCompartilhar}>
+              <button
+                className={styles.iconeCompartilhar}
+                onClick={() => compartilharVaga(vaga)}
+                aria-label={`Compartilhar vaga ${vaga.vaga}`}
+                title="Compartilhar vaga"
+              >
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -81,7 +109,7 @@ return (
                   <circle cx="18" cy="19" r="3" />
                   <path d="m8.7 10.6 6.6-4.2M8.7 13.4l6.6 4.2" />
                 </svg>
-              </span>
+              </button>
             </div>
 
             <div className={styles.detalhes}>
@@ -123,7 +151,7 @@ return (
             </div>
           </article>
         );
-      })}
+      })};
     </div>
 
     <button
@@ -146,9 +174,8 @@ return (
         aria-label={`Mostrar vaga ${i + 1}`}
         aria-current={i === indice ? "true" : undefined}
       />
-    ))}
+    ))};
   </div>
 </section>
 
-);
-}
+  )};

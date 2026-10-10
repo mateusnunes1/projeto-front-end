@@ -142,10 +142,20 @@
 }
 
 .iconeCompartilhar {
-    display: flex;
-    color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  color: #111;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
-
+.iconeCompartilhar:hover {
+  color: #009ff5;
+  transform: scale(1.1);
+}
 .detalhes {
     display: flex;
     flex-wrap: wrap;
