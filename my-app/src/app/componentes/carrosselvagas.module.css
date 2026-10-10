@@ -1,0 +1,332 @@
+.secaoVagas {
+    width: 100%;
+    padding: 100px 20px;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #f1f1ff;
+    background: linear-gradient(90deg, black 20%, #08085C 100%);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.subtitulo {
+    color: #7427ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: "Space Mono", monospace;
+}
+
+.cabecalho h2 {
+    margin: 12px 0;
+    font-size: clamp(28px, 4vw, 42px);
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+}
+
+.cabecalho h2 span {
+    color: #7427ff;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+}
+
+.cabecalho p {
+    color: #b8b8d2;
+    font-size: 15px;
+    font-family: "Space Mono", monospace;
+    line-height: 1.8;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 390px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.palco {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1200px;
+}
+
+.card {
+    position: absolute;
+    width: 370px;
+    max-width: calc(100vw - 100px);
+    min-height: 260px;
+    padding: 24px;
+    border: 1px solid #eeeeF5;
+    border-radius: 16px;
+    background: #fff;
+    color: #292936;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+    transition:
+    transform 0.45s ease,
+    opacity 0.45s ease,
+    filter 0.45s ease;
+    }
+
+.cardAtivo {
+    z-index: 3;
+    opacity: 1;
+    filter: none;
+    transform: translateX(0) scale(1);
+}
+
+.cardLateral {
+    z-index: 1;
+    opacity: 0.82;
+    filter: blur(0.4px);
+    transform:
+    translateX(calc(var(--posicao) * 240px)) scale(0.88);
+    pointer-events: none;
+}
+
+.topoCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 20px;
+}
+
+.logoEmpresa {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dddde5;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.logoEmpresa img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.infoPrincipal {
+    flex: 1;
+    min-width: 0;
+}
+
+.infoPrincipal h3 {
+    margin: 2px 0 6px;
+    color: #302c35;
+    font-size: 17px;
+    line-height: 1.3;
+    font-family: "Space Mono", monospace;
+}
+
+.infoPrincipal span {
+    color: #7427ff;
+    font-size: 14px;
+    font-family: "Space Mono", monospace;
+}
+
+.iconeCompartilhar {
+    display: flex;
+    color: #111;
+}
+
+.detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-bottom: 22px;
+}
+
+.detalhes p {
+    margin: 0;
+    font-size: 13px;
+    color: #383642;
+    font-family: "Space Mono", monospace;
+}
+
+.detalhes p span {
+    margin-right: 4px;
+    color: #292936;
+    font-family: "Space Mono", monospace;
+}
+
+.acoes {
+    display: flex;
+    gap: 9px;
+    }
+
+.botaoDetalhes,
+.botaoCandidatar {
+    min-height: 44px;
+    padding: 0 12px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #7427ff;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.25s ease;
+}
+
+.botaoDetalhes {
+    color: #7427ff;
+    background: #fff;
+}
+
+.botaoDetalhes {
+    background: #eef9ff;
+    font-family: "Space Mono", monospace;
+}
+
+.botaoCandidatar {
+    color: #fff;
+    background: #7427ff;
+}
+
+.botaoCandidatar {
+    background: #7427ff;
+    font-family: "Space Mono", monospace;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    border: 1px solid #24245e;
+    border-radius: 50%;
+    color: #fff;
+    background: #10104a;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.seta {
+    background: #7427ff;
+    border-color: #7427ff;
+}
+
+.esquerda {
+    left: 0;
+}
+
+.direita {
+    right: 0;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.indicador {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    background: #66668a;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.indicadorAtivo {
+    width: 26px;
+    background: #7427ff;
+}
+
+@media (max-width: 600px) {
+.secaoVagas {
+    padding: 55px 10px;
+}
+
+.carrossel {
+    height: 350px;
+}
+
+.card {
+    width: 340px;
+    max-width: calc(100vw - 64px);
+    padding: 17px;
+}
+
+.cardLateral {
+    transform:
+    translateX(calc(var(--posicao) * 110px)) scale(0.82);
+}
+
+.logoEmpresa {
+    width: 53px;
+    height: 53px;
+}
+
+.infoPrincipal h3 {
+    font-size: 15px;
+}
+
+.detalhes {
+    gap: 10px;
+    }
+
+.detalhes p {
+    font-size: 12px;
+}
+
+.acoes {
+    gap: 7px;
+}
+
+.botaoDetalhes,
+.botaoCandidatar {
+    padding: 0 7px;
+    font-size: 10px;
+    white-space: normal;
+}
+
+.seta {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.card,
+.seta,
+.indicador,
+.botaoDetalhes,
+.botaoCandidatar {
+    transition: none;
+}
+}

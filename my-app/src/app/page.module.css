@@ -148,12 +148,7 @@ html {
   min-height: 900px;
   padding: 100px 6%;
   box-sizing: border-box;
-  background: linear-gradient(
-    90deg,
-    #08082E 0%,
-    #101078 100%
-  );
-
+  background: linear-gradient(90deg,#08082E 0%,#101078 100%);
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -279,7 +274,7 @@ html {
   gap: 80px;
   box-sizing: border-box;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(90deg, black 20%, #08085C 100%);
+  background: linear-gradient(90deg,#08082E 0%,#101078 100%);
 }
 
 .whatsapp-text {

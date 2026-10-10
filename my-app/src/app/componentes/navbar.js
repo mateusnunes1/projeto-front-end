@@ -34,7 +34,8 @@ export default function Navbar() {
             <div className={`${styles.links} ${menuAberto ? styles.aberto : ''}`}>
                 <a href="#inicio" onClick={() => setMenuAberto(false)} className={secaoAtiva === 'inicio' ? styles.ativo : ''}>Inicio</a>
                 <a href="#sobre-nos" onClick={() => setMenuAberto(false)} className={secaoAtiva === 'sobre-nos' ? styles.ativo : ''}>Sobre Nós</a>
-                <a href="#whatsapp" onClick={() => setMenuAberto(false)} className={secaoAtiva === 'whatsapp' ? styles.ativo : ''}>Duvidas</a>
+                <a href="#vagas-destaque" onClick={() => setMenuAberto(false)} className={secaoAtiva === 'vagas-destaque' ? styles.ativo : ''}>Vagas Destaque</a>
+                <a href="#whatsapp" onClick={() => setMenuAberto(false)} className={secaoAtiva === 'whatsapp' ? styles.ativo : ''}>WhatsApp</a>
             </div>
             <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsapp}>WhatsApp</a>
             

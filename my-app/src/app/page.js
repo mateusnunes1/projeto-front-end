@@ -3,6 +3,7 @@ import Navbar from './componentes/navbar';
 import { FaWhatsapp } from "react-icons/fa";
 import PesquisaVagas from './componentes/pesquisavagas';
 import Footer from './componentes/footer';
+import CarrosselVagas from './componentes/carrosselvagas';
 
 export default function Home(){
   return(
@@ -81,6 +82,7 @@ export default function Home(){
         </div>
         </div>
       </section>
+      <CarrosselVagas />
         <section id="whatsapp" className={styles["whatsapp-section"]}>
             <div className={styles["whatsapp-text"]}>
               <span className={styles["whatsapp-tag"]}>ATENDIMENTO</span>
