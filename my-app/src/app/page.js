@@ -21,7 +21,7 @@ export default function Home(){
                   <div className={styles.cardRapido}>
                     <div className={styles.iconeCard}>🎯</div>
                       <h3>Jovem Aprendiz</h3>
-                      <p>Encontre oportunidades para começar sua carreira.</p>
+                      <p>Encontre oportunidades para começar sua carreira...</p>
                     </div>
                     
 
