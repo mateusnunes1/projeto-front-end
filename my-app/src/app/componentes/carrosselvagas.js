@@ -174,7 +174,7 @@ return (
         aria-label={`Mostrar vaga ${i + 1}`}
         aria-current={i === indice ? "true" : undefined}
       />
-    ))};
+    ))}
   </div>
 </section>
 

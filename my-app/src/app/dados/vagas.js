@@ -61,5 +61,14 @@ export const vagas = [
     categoria: 'Estágio',
     logo: '/empresas/michelin.png',
     link: 'https://michelinhr.wd3.myworkdayjobs.com/pt-BR/Michelin/job/Barueri/Banco-de-Talentos---Programa-de-Estgio_R-2024016749'
+},
+{
+    id: 8,
+    empresa: 'Empresa TOTVS',
+    vaga: 'Estagio De Tecnologia',
+    localização: 'São Paulo, SP',
+    categoria: 'Estagio',
+    logo: '/empresas/totvs.jpg',
+    link: 'https://atracaodetalentos.totvs.app/vempratotvs/job-opportunity/11654',
 }
 ];

@@ -13,6 +13,7 @@ const empresas = [
     { nome: 'TOTVS', logo:"/empresas/totvs.jpg"},
     { nome: 'Mottu', logo:"/empresas/mottu.png"},
     { nome: 'Itau', logo:"/empresas/itau.png"},
+    { nome: 'Michelin', logo:"/empresas/michelin.png"},
 ];
 
 export default function CarrosselEmpresas() {
