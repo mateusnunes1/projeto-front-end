@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
-  padding-top: 250px;
+  padding-top: 150px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -42,7 +42,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   opacity: 0.15;
   z-index: 0;
   filter: drop-shadow(0 10px 30px rgba(2, 99, 236, 0.9));
@@ -94,53 +94,6 @@ html {
 .codigo:hover {
   color: #119b84;
   transition: 0.3s;
-}
-.cardsRapidos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  margin-top: 35px;
-  font-family: "Space Mono", monospace;
-}
-
-.cardRapido {
-  width: 270px;
-  min-height: 160px;
-  padding: 25px;
-  box-sizing: border-box;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(116, 39, 255, 0.35);
-  border-radius: 18px;
-  transition: 0.3s ease;
-  font-family: "Space Mono", monospace;
-}
-
-.cardRapido:hover {
-  transform: translateY(-8px);
-  border-color: #7427ff;
-  background: rgba(116, 39, 255, 0.10);
-  box-shadow: 0 10px 30px rgba(116, 39, 255, 0.25);
-}
-
-.iconeCard {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.cardRapido h3 {
-  color: white;
-  font-size: 19px;
-  margin: 5px 0 10px;
-}
-
-.cardRapido p {
-  color: #aaaac5;
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0;
 }
 
 .sobre-nos-section {

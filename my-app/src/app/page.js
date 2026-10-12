@@ -5,6 +5,7 @@ import PesquisaVagas from './componentes/pesquisavagas';
 import Footer from './componentes/footer';
 import CarrosselVagas from './componentes/carrosselvagas';
 import CarrosselEmpresas from './componentes/carrosselempresas';
+import CardsRapidos from './componentes/cardsrapidos/cardsrapidos';
 
 export default function Home(){
   return(
@@ -12,34 +13,13 @@ export default function Home(){
     <Navbar />
       <main id="inicio" className={styles.main}>
         <div className={styles.conteudo}>
-              <h1>Seu Próximo Passo Começa A
-                qui</h1>
+              <h1>Seu Próximo Passo Começa Aqui</h1>
               <p>Encontre oportunidades de Jovem Aprendiz e Estágio que combinam com você</p>
               <PesquisaVagas />
+              <CardsRapidos />
               <div><a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsappFlutuante}><FaWhatsapp /></a></div>
-                <div id="cards-rapidos" className={styles.cardsRapidos}>
-                  <div className={styles.cardRapido}>
-                    <div className={styles.iconeCard}>🎯</div>
-                      <h3>Jovem Aprendiz</h3>
-                      <p>Encontre oportunidades para começar sua carreira.</p>
-                    </div>
-                    
-
-                    <div className={styles.cardRapido}>
-                      <div className={styles.iconeCard}>🎓</div>
-                      <h3>Estágio</h3>
-                      <p>Conquiste experiência na sua área de estudo.</p>
-                    </div>
-
-                    <div className={styles.cardRapido}>
-                      <div className={styles.iconeCard}>💬</div>
-                      <h3>Tire suas dúvidas</h3>
-                      <p>Fale com nosso bot pelo WhatsApp.</p>
-                    </div>
-
-                </div>
           </div>
-      </main>
+      </main> 
 
       <CarrosselEmpresas />
 
@@ -62,8 +42,7 @@ export default function Home(){
             <p>
               Com uma experiência de busca de vagas de emprego simplificada e
               eficiente. Você pode pesquisar vagas por palavra-chave, localização e
-              categoria, além de receber notificações sobre novas oportunidades.
-              Estamos comprometidos em ajudar você a encontrar a vaga dos seus sonhos!
+              categoria,Estamos comprometidos em ajudar você a encontrar a vaga dos seus sonhos!
             </p>
           </div>
         </div>

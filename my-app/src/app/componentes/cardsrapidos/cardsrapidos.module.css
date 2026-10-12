@@ -1,0 +1,171 @@
+.secaoCards {
+width: 100%;
+padding: 25px 6% 45px;
+scroll-margin-top: 100px;
+font-family: "Space Mono", monospace;
+}
+
+.containerCards {
+width: 100%;
+max-width: 5100px;
+margin: 0 auto;
+
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+}
+
+.card {
+position: relative;
+overflow: hidden;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+min-height: 90px;
+padding: 30px 24px;
+
+background: rgba(255, 255, 255, 0.04);
+border: 1px solid rgba(116, 39, 255, 0.35);
+border-radius: 24px;
+
+transition:
+transform 0.3s ease,
+border-color 0.3s ease,
+box-shadow 0.3s ease,
+background 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-7px);
+border-color: #7427ff;
+box-shadow: 0 12px 35px rgba(116, 39, 255, 0.18);
+
+background: linear-gradient(145deg,rgba(28, 22, 65, 0.96),rgba(9, 9, 53, 0.98)
+);
+}
+
+.icone {
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 58px;
+height: 58px;
+margin-bottom: 14px;
+
+color: #7427ff;
+font-size: 32px;
+
+background: rgba(116, 39, 255, 0.12);
+border: 1px solid rgba(116, 39, 255, 0.25);
+border-radius: 18px;
+
+transition:
+transform 0.3s ease,
+background 0.3s ease;
+}
+
+.card:hover .icone {
+transform: scale(1.08);
+background: rgba(116, 39, 255, 0.22);
+}
+
+.card h2 {
+margin: 0 0 12px;
+
+color: #f5f3ff;
+font-size: 21px;
+font-weight: 700;
+}
+
+.card p {
+max-width: 300px;
+margin: 0 0 22px;
+
+color: #7427ff;
+font-size: 15px;
+line-height: 1.7;
+}
+
+.botaoCard {
+margin-top: auto;
+padding: 10px 17px;
+
+color: #7427ff;
+font-family: inherit;
+font-size: 14px;
+font-weight: 600;
+
+background: rgba(116, 39, 255, 0.12);
+border: 1px solid rgba(116, 39, 255, 0.4);
+border-radius: 25px;
+
+cursor: pointer;
+
+transition:
+color 0.25s ease,
+background 0.25s ease,
+border-color 0.25s ease;
+}
+
+.botaoCard:hover {
+color: #ffffff;
+background: #7427ff;
+border-color: #7427ff;
+}
+
+.botaoCard:focus-visible {
+outline: 2px solid #c4a7ff;
+outline-offset: 4px;
+}
+
+@media (max-width: 850px) {
+.containerCards {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 18px;
+}
+
+.card {
+padding: 25px 18px;
+}
+}
+
+@media (max-width: 550px) {
+.secaoCards {
+padding: 20px 5% 35px;
+}
+
+.containerCards {
+grid-template-columns: 1fr;
+gap: 16px;
+}
+
+.card {
+min-height: 225px;
+padding: 25px 20px;
+}
+
+.card h2 {
+font-size: 19px;
+}
+
+.card p {
+font-size: 14px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.card,
+.icone,
+.botaoCard {
+transition: none;
+}
+
+.card:hover,
+.card:hover .icone {
+transform: none;
+}
+}

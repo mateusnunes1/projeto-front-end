@@ -21,7 +21,7 @@ const empresas = [
 export default function CarrosselEmpresas() {
   return (
     <section className={styles.carrosselEmpresas} id="empresas">
-      <h2>Empresas Parceiras que podem transformar seu futuro</h2>
+      <h2>Empresas com Oportunidade em Destaque</h2>
       <p>
         Conheça algumas das empresas que oferecem oportunidades
         para dar o próximo passo na sua carreira.
