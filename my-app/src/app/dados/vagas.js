@@ -70,5 +70,23 @@ export const vagas = [
     categoria: 'Estagio',
     logo: '/empresas/totvs.jpg',
     link: 'https://atracaodetalentos.totvs.app/vempratotvs/job-opportunity/11654',
+},
+{
+    id: 9,
+    empresa: 'Empresa Outback',
+    vaga: 'Jovem Aprendiz Restaurante',
+    localização: 'Moema, SP',
+    categoria: 'Jovem Aprendiz',
+    logo: '/empresas/outback.png',
+    link: 'https://outback.pandape.infojobs.com.br/Detail/3814448',
+},
+{
+    id: 10,
+    empresa: 'Empresa Sodexo',
+    vaga: 'Jovem Aprendiz Operacional',
+    localização: 'São Paulo, SP',
+    categoria: 'Jovem Aprendiz',
+    logo: '/empresas/sodexo.png',
+    link: 'https://sodexoonsiteoperacao.pandape.infojobs.com.br/Detail/3808065',
 }
 ];

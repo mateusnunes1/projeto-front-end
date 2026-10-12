@@ -21,7 +21,7 @@ export default function Home(){
                   <div className={styles.cardRapido}>
                     <div className={styles.iconeCard}>🎯</div>
                       <h3>Jovem Aprendiz</h3>
-                      <p>Encontre oportunidades para começar sua carreira...</p>
+                      <p>Encontre oportunidades para começar sua carreira.</p>
                     </div>
                     
 
@@ -36,10 +36,13 @@ export default function Home(){
                       <h3>Tire suas dúvidas</h3>
                       <p>Fale com nosso bot pelo WhatsApp.</p>
                     </div>
+
                 </div>
           </div>
       </main>
+
       <CarrosselEmpresas />
+
         <section id="sobre-nos" className={styles["sobre-nos-section"]}>
           <div className={styles["sobre-nos-conteudo"]}>
           <div className={styles["sobre-nos-topo"]}>
@@ -84,7 +87,9 @@ export default function Home(){
         </div>
         </div>
       </section>
+
       <CarrosselVagas />
+
         <section id="whatsapp" className={styles["whatsapp-section"]}>
             <div className={styles["whatsapp-text"]}>
               <span className={styles["whatsapp-tag"]}>ATENDIMENTO</span>
@@ -102,6 +107,7 @@ export default function Home(){
             <img src="./duvidas.png" alt="atendimento whatsapp" width={650} height={450}/>
           </div>
         </section>
+
         <Footer/ >
     </>
   );
