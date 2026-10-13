@@ -121,6 +121,7 @@
 
 .socialLink:hover img {
   transform: scale(1.12);
+  color: #7427ff;
 }
 
 .socialLink img {

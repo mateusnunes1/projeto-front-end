@@ -51,9 +51,16 @@ return (
                             <a href={vaga.link} target="_blank" rel="noopener noreferrer" className={styles.botao}>Acessar vaga</a>
                         </div>
                     ))
-                ) : (
-                    <p className={styles.semResultado}>Nenhuma vaga encontrada.</p>
-                )}
+                    ) : (
+                    <div className={styles.semResultado}>
+                        <span>🔎</span>
+                        <p>Nenhuma vaga encontrada.</p>
+                        <small>
+                         Tente pesquisar por outro nome de vaga,
+                         empresa ou localização.
+                        </small>
+                    </div>
+                     )}  
             </div>
         )}
     </div>

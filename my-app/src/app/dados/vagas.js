@@ -5,7 +5,7 @@ export const vagas = [
     vaga: 'Estagio Corporativo',
     categoria: 'Estágio',
     localização: 'São Paulo, SP',
-    logo: '/empresas/itau.png',
+    logo: '/empresas/itau-logo.png',
     link: 'https://carreiras.itau.com.br/vaga/sao-paulo/programa-de-estagio-corporativo-2026/35299/97432985872'
 },
 {
@@ -23,7 +23,7 @@ export const vagas = [
     vaga: 'Estagio de Marketplace',
     localização: 'São Paulo, SP',
     categoria: 'Estágio',
-    logo: '/empresas/mottu.png',
+    logo: '/empresas/mottu-logo.png',
     link: 'https://mottu.inhire.app/vagas/eabbad37-c241-4055-8c1a-5a45725a3959/estagiario-de-marketplace'
 },
 {
@@ -32,7 +32,7 @@ export const vagas = [
     vaga: 'Jovem Aprendiz Vivo',
     localização: 'São Paulo, SP',
     categoria: 'Jovem Aprendiz',
-    logo: '/empresas/vivo.jpg',
+    logo: '/empresas/vivo-logo.png',
     link: 'https://vivo.gupy.io/jobs/11131069?jobBoardSource=linkedin'
 },
 {
