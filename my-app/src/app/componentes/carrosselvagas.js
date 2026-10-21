@@ -8,18 +8,14 @@ export default function CarrosselVagas() {
     const [indice, setIndice] = useState(0);
 
     if (!vagas || vagas.length === 0) {
-    return <p>Nenhuma vaga disponível no momento.</p>;
-    }
+    return <p>Nenhuma vaga disponível no momento.</p>;}
 
     const navegar = (direcao) => {
-    setIndice((atual) => (atual + direcao + vagas.length) % vagas.length);
-    };
+    setIndice((atual) => (atual + direcao + vagas.length) % vagas.length);};
 
     const obterVaga = (deslocamento) => {
     return vagas[
-    (indice + deslocamento + vagas.length) % vagas.length
-    ];
-    };
+    (indice + deslocamento + vagas.length) % vagas.length];};
 
     const compartilharVaga = async (vaga) => {
       const url = vaga.link || window.location.href;
@@ -47,11 +43,9 @@ export default function CarrosselVagas() {
 return (
     <section className={styles.secaoVagas} id="vagas-destaque">
     <div className={styles.cabecalho}>
-    <span className={styles.subtitulo}>OPORTUNIDADES</span>
-    <h2>
-    Vagas em <span>destaque</span>
-    </h2>
-    <p>Encontre uma oportunidade para dar o próximo passo.</p>
+      <span className={styles.subtitulo}>OPORTUNIDADES</span>
+      <h2>Vagas em <span>destaque</span></h2>
+      <p>Encontre uma oportunidade para dar o próximo passo.</p>
     </div>
 
         <div className={styles.carrossel}>
