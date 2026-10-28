@@ -33,7 +33,7 @@ const cards = [
 export default function CardsRapidos() {
     const abrirCard = (acao) => {
         if (acao === 'whatsapp') {
-    window.open('https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc','_blank','noopener,noreferrer');
+    window.open('https://wa.me/5511924907385?text=Ol%C3%A1%2C%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida.','_blank','noopener,noreferrer');
 return;}
 
 document.querySelector(acao)?.scrollIntoView({

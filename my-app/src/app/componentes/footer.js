@@ -19,7 +19,7 @@ const footerData = {
       links: [
         { texto: "Sobre nós", url: "#sobre-nos" },
         { texto: "Missão, visão e valores", url: "#sobre-nos" },
-        { texto: "Fale conosco", url: "https://wa.me/SEUNUMERO" },
+        { texto: "Fale conosco", url: "https://wa.me/5511924907385?text=Ol%C3%A1%2C%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida." },
       ],
     },
   ],

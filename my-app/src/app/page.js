@@ -17,7 +17,7 @@ export default function Home(){
               <p>Encontre oportunidades de Jovem Aprendiz e Estágio que combinam com você</p>
               <PesquisaVagas />
               <CardsRapidos />
-              <div><a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsappFlutuante}><FaWhatsapp /></a></div>
+              <div><a href="https://wa.me/5511924907385?text=Ol%C3%A1%2C%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer" className={styles.whatsappFlutuante}><FaWhatsapp /></a></div>
           </div>
       </main> 
 
@@ -72,7 +72,7 @@ export default function Home(){
         <section id="whatsapp" className={styles["whatsapp-section"]}>
             <div className={styles["whatsapp-text"]}>
               <span className={styles["whatsapp-tag"]}>ATENDIMENTO</span>
-              <h2>Tire suas dúvidas<br/>pelo <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles["whatsapp-link"]}>WhatsApp!</a></h2>
+              <h2>Tire suas dúvidas<br/>pelo <a href="https://wa.me/5511924907385?text=Ol%C3%A1%2C%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer" className={styles["whatsapp-link"]}>WhatsApp!</a></h2>
               <p>
                 Ficou com alguma dúvida sobre uma vaga?
                 Nosso atendimento pelo WhatsApp está aqui para ajudar.</p>
@@ -80,7 +80,7 @@ export default function Home(){
                 Converse com nosso bot, consulte informações sobre as
                 oportunidades e encontre respostas para suas dúvidas
                 de forma rápida e prática.</p>
-              <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles["whatsapp-button"]}>💬 Fale conosco pelo WhatsApp</a>
+              <a href="https://wa.me/5511924907385?text=Ol%C3%A1%2C%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer" className={styles["whatsapp-button"]}>💬 Fale conosco pelo WhatsApp</a>
             </div>
                   <div className={styles["whatsapp-image"]}>
             <img src="./duvidas.png" alt="atendimento whatsapp" width={650} height={450}/>
